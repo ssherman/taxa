@@ -9,7 +9,7 @@ module Taxa
       # tree of life about api endpoint
       module About
         def about
-          http_request 'https://api.opentreeoflife.org/v3/tree_of_life/about'
+          JSON.parse(@http_client.get('https://api.opentreeoflife.org/v3/tree_of_life/about'))
         end
       end
     end

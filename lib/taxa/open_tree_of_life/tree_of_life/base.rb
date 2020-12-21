@@ -10,9 +10,10 @@ module Taxa
       include About
       include NodeInfo
 
-      def http_request(url)
-        response = Faraday.post url
-        JSON.parse(response.body)
+      attr_reader :http_client
+
+      def initialize(http_client)
+        @http_client = http_client
       end
     end
   end

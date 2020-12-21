@@ -2,6 +2,7 @@
 
 require_relative './tnrs/base'
 require_relative './tree_of_life/base'
+require 'faraday'
 
 module Taxa
   module OpenTreeOfLife
@@ -12,8 +13,10 @@ module Taxa
 
       def initialize(**options)
         @options = options
-        @tnrs = TNRS.new
-        @tree_of_life = TreeOfLife.new
+
+        http_client = options[:http_client] || Faraday.new
+        @tnrs = TNRS.new(http_client)
+        @tree_of_life = TreeOfLife.new(http_client)
       end
     end
   end

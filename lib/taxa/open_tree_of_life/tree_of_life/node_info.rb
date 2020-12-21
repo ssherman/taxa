@@ -10,7 +10,7 @@ module Taxa
       module NodeInfo
         def node_info(**parameters)
           url = 'https://api.opentreeoflife.org/v3/tree_of_life/node_info'
-          response = Faraday.post(url, JSON.generate(parameters), 'Content-Type' => 'application/json')
+          response = @http_client.post(url, JSON.generate(parameters), 'Content-Type' => 'application/json')
           JSON.parse(response.body)
         end
       end
