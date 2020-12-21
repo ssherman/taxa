@@ -4,7 +4,7 @@ require 'faraday'
 require 'json'
 
 module Taxa
-  class OpenTreeOfLife
+  module OpenTreeOfLife
     class TreeOfLife
       # wrapper around the node_info tree of life endpoint for Open Tree of Life
       module NodeInfo

@@ -4,7 +4,7 @@ require 'faraday'
 require 'json'
 
 module Taxa
-  class OpenTreeOfLife
+  module OpenTreeOfLife
     class TNRS
       # tnrs match_names api endpoint
       module MatchNames

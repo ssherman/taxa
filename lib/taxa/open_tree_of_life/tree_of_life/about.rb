@@ -4,7 +4,7 @@ require 'faraday'
 require 'json'
 
 module Taxa
-  class OpenTreeOfLife
+  module OpenTreeOfLife
     class TreeOfLife
       # tree of life about api endpoint
       module About

@@ -3,9 +3,9 @@
 require_relative './match_names'
 
 module Taxa
-  class OpenTreeOfLife
+  module OpenTreeOfLife
     class TNRS
-      extend MatchNames
+      include MatchNames
     end
   end
 end

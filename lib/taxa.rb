@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 require 'taxa/version'
-require_relative './taxa/open_tree_of_life/tree_of_life/base'
-require_relative './taxa/open_tree_of_life/tnrs/base'
+require_relative './taxa/open_tree_of_life/client'
 
 module Taxa
   # include OpenTreeOfLife
