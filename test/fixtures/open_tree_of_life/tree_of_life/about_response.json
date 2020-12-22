@@ -1,0 +1,42 @@
+{
+  "source_list" : [ "pg_2000@tree4098", "ot_167@tree1", "pg_2048@tree4220", "pg_2689@tree6241" ],
+  "date_created" : "2016-03-18 15:28:40",
+  "root" : {
+    "taxon" : {
+      "tax_sources" : [ "ncbi:131567" ],
+      "unique_name" : "cellular organisms",
+      "name" : "cellular organisms",
+      "rank" : "no rank",
+      "ott_id" : 93302
+    },
+    "num_tips" : 2424255,
+    "node_id" : "ott93302"
+  },
+  "num_source_trees" : 485,
+  "taxonomy" : "ott2.9draft12",
+  "source_id_map" : {
+    "pg_2000@tree4098" : {
+      "git_sha" : "e163a9245c15aefbba79defb685df98d5a73cab3",
+      "tree_id" : "tree4098",
+      "study_id" : "pg_2000"
+    },
+    "ot_167@tree1" : {
+      "git_sha" : "e163a9245c15aefbba79defb685df98d5a73cab3",
+      "tree_id" : "tree1",
+      "study_id" : "ot_167"
+    },
+    "pg_2048@tree4220" : {
+      "git_sha" : "e163a9245c15aefbba79defb685df98d5a73cab3",
+      "tree_id" : "tree4220",
+      "study_id" : "pg_2048"
+    },
+    "pg_2689@tree6241" : {
+      "git_sha" : "e163a9245c15aefbba79defb685df98d5a73cab3",
+      "tree_id" : "tree6241",
+      "study_id" : "pg_2689"
+    }
+  },
+  "num_source_studies" : 479,
+  "filtered_flags" : [ "major_rank_conflict", "major_rank_conflict_inherited", "environmental", "unclassified_inherited", "unclassified", "viral", "barren", "not_otu", "incertae_sedis", "incertae_sedis_inherited", "extinct_inherited", "extinct", "hidden", "unplaced", "unplaced_inherited", "was_container", "inconsistent", "hybrid", "merged" ],
+  "synth_id" : "opentree4.1"
+}

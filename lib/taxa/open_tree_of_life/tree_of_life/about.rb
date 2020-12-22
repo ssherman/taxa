@@ -9,7 +9,8 @@ module Taxa
       # tree of life about api endpoint
       module About
         def about
-          JSON.parse(@http_client.get('https://api.opentreeoflife.org/v3/tree_of_life/about'))
+          response = @http_client.post('https://api.opentreeoflife.org/v3/tree_of_life/about')
+          JSON.parse(response.body)
         end
       end
     end

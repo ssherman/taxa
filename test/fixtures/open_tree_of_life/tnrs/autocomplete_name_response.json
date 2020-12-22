@@ -1,0 +1,11 @@
+[ {
+  "is_suppressed" : false,
+  "unique_name" : "Endoxyla (genus in Holozoa)",
+  "ott_id" : 1098009,
+  "is_higher" : true
+}, {
+  "is_suppressed" : false,
+  "unique_name" : "Endoxyla (genus in Nucletmycea)",
+  "ott_id" : 307183,
+  "is_higher" : true
+} ]

@@ -3,6 +3,7 @@
 require_relative './match_names'
 require_relative './autocomplete_name'
 require_relative './contexts'
+require_relative './infer_context'
 
 module Taxa
   module OpenTreeOfLife
@@ -11,6 +12,7 @@ module Taxa
       include MatchNames
       include AutocompleteName
       include Contexts
+      include InferContext
 
       attr_reader :http_client
 

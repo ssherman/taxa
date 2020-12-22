@@ -10,7 +10,7 @@ module Taxa
       module Contexts
         def contexts
           url = 'https://api.opentreeoflife.org/v3/tnrs/contexts'
-          response = @http_client.post(url, JSON.generate(payload), 'Content-Type' => 'application/json')
+          response = @http_client.post(url, nil, 'Content-Type' => 'application/json')
           JSON.parse(response.body)
         end
       end

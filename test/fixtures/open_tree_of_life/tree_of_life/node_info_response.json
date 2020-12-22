@@ -1,0 +1,36 @@
+{
+  "partial_path_of" : {
+    "pg_2573@tree5959" : "node1011373"
+  },
+  "supported_by" : {
+    "taxonomy" : "ott2.9draft12"
+  },
+  "source_id_map" : {
+    "pg_2573@tree5959" : {
+      "git_sha" : "e163a9245c15aefbba79defb685df98d5a73cab3",
+      "tree_id" : "tree5959",
+      "study_id" : "pg_2573"
+    },
+    "taxonomy" : {
+      "name" : "ott",
+      "version" : "ott2.9draft12"
+    },
+    "pg_2822@tree6569" : {
+      "git_sha" : "e163a9245c15aefbba79defb685df98d5a73cab3",
+      "tree_id" : "tree6569",
+      "study_id" : "pg_2822"
+    }
+  },
+  "taxon" : {
+    "tax_sources" : [ "ncbi:8782", "worms:1836", "gbif:212", "irmng:1142" ],
+    "unique_name" : "Aves",
+    "name" : "Aves",
+    "rank" : "class",
+    "ott_id" : 81461
+  },
+  "num_tips" : 14302,
+  "terminal" : {
+    "pg_2822@tree6569" : "ott240568"
+  },
+  "node_id" : "ott81461"
+}

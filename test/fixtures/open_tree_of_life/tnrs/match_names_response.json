@@ -1,0 +1,78 @@
+{
+  "governing_code" : "ICN",
+  "unambiguous_names" : [ "Barnadesia", "Aster", "Symphyotrichum" ],
+  "unmatched_names" : [ ],
+  "matched_names" : [ "Barnadesia", "Aster", "Symphyotrichum" ],
+  "context" : "Asteraceae",
+  "includes_deprecated_taxa" : false,
+  "includes_suppressed_names" : false,
+  "includes_approximate_matches" : false,
+  "taxonomy" : {
+    "weburl" : "https://tree.opentreeoflife.org/about/taxonomy-version/ott2.9",
+    "author" : "open tree of life project",
+    "name" : "ott",
+    "source" : "ott2.9draft12",
+    "version" : "2.9"
+  },
+  "results" : [ {
+    "name" : "Symphyotrichum",
+    "matches" : [ {
+      "is_synonym" : false,
+      "score" : 1.0,
+      "nomenclature_code" : "ICN",
+      "is_approximate_match" : false,
+      "taxon" : {
+        "is_suppressed" : false,
+        "tax_sources" : [ "ncbi:72977", "worms:416035", "gbif:3151391", "irmng:1029676" ],
+        "unique_name" : "Symphyotrichum",
+        "synonyms" : [ "Symphyotrichum" ],
+        "name" : "Symphyotrichum",
+        "flags" : [ ],
+        "ott_id" : 1058735,
+        "rank" : "genus"
+      },
+      "search_string" : "symphyotrichum",
+      "matched_name" : "Symphyotrichum"
+    } ]
+  }, {
+    "name" : "Barnadesia",
+    "matches" : [ {
+      "is_synonym" : false,
+      "score" : 1.0,
+      "nomenclature_code" : "ICN",
+      "is_approximate_match" : false,
+      "taxon" : {
+        "is_suppressed" : false,
+        "tax_sources" : [ "ncbi:4237", "gbif:3105285", "irmng:1046392" ],
+        "unique_name" : "Barnadesia",
+        "synonyms" : [ "Barnadesia", "Barnadesia Mutis" ],
+        "name" : "Barnadesia",
+        "flags" : [ ],
+        "ott_id" : 515698,
+        "rank" : "genus"
+      },
+      "search_string" : "barnadesia",
+      "matched_name" : "Barnadesia"
+    } ]
+  }, {
+    "name" : "Aster",
+    "matches" : [ {
+      "is_synonym" : false,
+      "score" : 1.0,
+      "nomenclature_code" : "ICN",
+      "is_approximate_match" : false,
+      "taxon" : {
+        "is_suppressed" : false,
+        "tax_sources" : [ "ncbi:41479", "worms:403904", "gbif:3093921", "irmng:1355106" ],
+        "unique_name" : "Aster",
+        "synonyms" : [ "Borkonstia", "Virgulaster", "Conyzanthus", "Aster", "Chlamydites", "Weberaster" ],
+        "name" : "Aster",
+        "flags" : [ ],
+        "ott_id" : 5507594,
+        "rank" : "genus"
+      },
+      "search_string" : "aster",
+      "matched_name" : "Aster"
+    } ]
+  } ]
+}
