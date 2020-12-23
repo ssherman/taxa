@@ -2,6 +2,8 @@
 
 require_relative './about'
 require_relative './node_info'
+require_relative './mrca'
+require_relative './subtree'
 
 module Taxa
   module OpenTreeOfLife
@@ -9,6 +11,8 @@ module Taxa
     class TreeOfLife
       include About
       include NodeInfo
+      include Mrca
+      include Subtree
 
       attr_reader :http_client
 
