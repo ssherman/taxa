@@ -1,0 +1,10 @@
+{
+  "is_suppressed" : false,
+  "tax_sources" : [ "ncbi:4237", "gbif:3105285", "irmng:1046392" ],
+  "unique_name" : "Barnadesia",
+  "synonyms" : [ "Barnadesia Mutis" ],
+  "name" : "Barnadesia",
+  "flags" : [ ],
+  "ott_id" : 515698,
+  "rank" : "genus"
+}
