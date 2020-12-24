@@ -8,9 +8,6 @@ module Taxa
     class TreeOfLife
       # wrapper around the node_info tree of life endpoint for Open Tree of Life
       module Subtree
-        SUBTREE_FORMATS = %w[newick arguson].freeze
-        SUBTREE_LABEL_FORMATS = %w[name id name_and_id].freeze
-
         def subtree(**parameters)
           ott_id = parameters[:ott_id]
           node_id = parameters[:node_id]
@@ -41,16 +38,6 @@ module Taxa
           return if SUBTREE_FORMATS.include?(format)
 
           raise ArgumentError, "format be one of the following #{SUBTREE_FORMATS.join(', ')}"
-        end
-
-        def get_label_format(format, **parameters)
-          if format == 'newick'
-            label_format = parameters[:label_format] || 'name_and_id'
-            unless SUBTREE_LABEL_FORMATS.include?(label_format)
-              raise ArgumentError, "label_format be one of the following #{SUBTREE_LABEL_FORMATS.join(', ')}"
-            end
-          end
-          nil
         end
 
         def get_height_limit(format, **parameters)
