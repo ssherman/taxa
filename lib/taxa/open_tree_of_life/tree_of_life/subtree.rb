@@ -17,9 +17,9 @@ module Taxa
           format = parameters[:format] || 'newick'
           validate_format(format)
 
-          label_format = get_label_format(format, parameters)
+          label_format = get_label_format(format, **parameters)
 
-          height_limit = get_height_limit(format, parameters)
+          height_limit = get_height_limit(format, **parameters)
           payload = { node_id: node_id, ott_id: ott_id, format: format, label_format: label_format,
                       height_limit: height_limit }.compact
           url = 'https://api.opentreeoflife.org/v3/tree_of_life/subtree'

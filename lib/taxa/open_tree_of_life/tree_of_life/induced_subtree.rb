@@ -14,7 +14,7 @@ module Taxa
 
           validate_ott_and_node_ids(ott_ids, node_ids)
 
-          label_format = get_label_format('newick', parameters)
+          label_format = get_label_format('newick', **parameters)
 
           payload = { node_ids: node_ids, ott_ids: ott_ids, label_format: label_format }.compact
           url = 'https://api.opentreeoflife.org/v3/tree_of_life/induced_subtree'

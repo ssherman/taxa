@@ -1,0 +1,12 @@
+{
+  "mrca" : {
+    "is_suppressed" : false,
+    "tax_sources" : [ "ncbi:4209", "worms:234044", "gbif:414", "irmng:10011" ],
+    "unique_name" : "Asterales",
+    "synonyms" : [ ],
+    "name" : "Asterales",
+    "flags" : [ ],
+    "ott_id" : 1042120,
+    "rank" : "order"
+  }
+}
