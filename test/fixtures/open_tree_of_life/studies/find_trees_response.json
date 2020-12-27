@@ -1,0 +1,18 @@
+{
+  "matched_studies" : [ {
+    "ot:studyPublicationReference" : "Klompen H., Lekveishvili M., & Iv W. 2006. Phylogeny of parasitiform mites (Acari) based on rRNA. Molecular Phylogenetics and Evolution, null.",
+    "ot:curatorName" : "Chris Owen",
+    "ot:studyId" : "pg_1793",
+    "matched_trees" : [ {
+      "ot:studyId" : "pg_1793",
+      "ot:branchLengthMode" : "ot:posteriorSupport",
+      "oti_tree_id" : "pg_1793_tree3630",
+      "ot:branchLengthDescription" : ""
+    } ],
+    "ot:studyYear" : 2006,
+    "ot:focalClade" : 150786,
+    "ot:focalCladeOTTTaxonName" : "Parasitiformes",
+    "ot:dataDeposit" : "http://purl.org/phylo/treebase/phylows/study/TB2:S1707",
+    "ot:studyPublication" : "http://dx.doi.org/10.1016/j.ympev.2006.10.024"
+  } ]
+}

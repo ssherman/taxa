@@ -1,0 +1,12 @@
+{
+  "matched_studies" : [ {
+    "ot:studyPublicationReference" : "Tippery N., & Les D. 2011. Phylogenetic relationships and morphological evolution in Nymphoides (Menyanthaceae). Systematic Botany, 36: 1101-1113.",
+    "ot:curatorName" : "bryan drew",
+    "ot:studyId" : "pg_719",
+    "ot:studyYear" : 2011,
+    "ot:focalClade" : 694622,
+    "ot:focalCladeOTTTaxonName" : "Menyanthaceae",
+    "ot:dataDeposit" : "http://purl.org/phylo/treebase/phylows/study/TB2:S11079",
+    "ot:studyPublication" : "http://dx.doi.org/10.1600/036364411X605092"
+  } ]
+}

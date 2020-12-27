@@ -1,0 +1,4 @@
+{
+  "tree_properties" : [ "ot:treebaseOTUId", "ot:nodeLabelMode", "ot:originalLabel", "oti_tree_id", "ot:ottTaxonName", "ot:inferenceMethod", "ot:tag", "ot:treebaseTreeId", "ot:comment", "ot:branchLengthDescription", "ot:treeModified", "ot:studyId", "ot:branchLengthTimeUnits", "ot:ottId", "ot:branchLengthMode", "ot:treeLastEdited", "ot:nodeLabelDescription" ],
+  "study_properties" : [ "ot:studyModified", "ot:focalClade", "ot:focalCladeOTTTaxonName", "ot:focalCladeOTTId", "ot:studyPublication", "ot:studyLastEditor", "ot:focalCladeTaxonName", "ot:tag", "ot:comment", "ot:studyLabel", "ot:authorContributed", "ot:studyPublicationReference", "ot:curatorName", "ot:studyId", "ot:studyUploaded", "ot:studyYear", "ot:dataDeposit" ]
+}
