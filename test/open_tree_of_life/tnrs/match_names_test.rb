@@ -26,12 +26,12 @@ module OpenTreeOfLife
       end
 
       def test_success
-        result = @client.tnrs.match_names(names: ['foo'])
+        result = @client.tnrs.match_names(['foo'])
         assert_instance_of(Hash, result)
       end
 
       def test_failure_with_no_names
-        assert_raises(ArgumentError) { @client.tnrs.match_names }
+        assert_raises(ArgumentError) { @client.tnrs.match_names(nil) }
       end
     end
   end

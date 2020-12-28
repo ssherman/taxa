@@ -30,10 +30,6 @@ module OpenTreeOfLife
         assert_instance_of(Hash, result)
       end
 
-      def test_not_array
-        assert_raises(ArgumentError) { @client.taxonomy.mrca('asdsadas') }
-      end
-
       def test_nil
         assert_raises(ArgumentError) { @client.taxonomy.mrca(nil) }
       end
