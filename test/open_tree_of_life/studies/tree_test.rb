@@ -4,7 +4,7 @@ require 'test_helper'
 
 module OpenTreeOfLife
   module Studies
-    class StudyTest < Minitest::Test
+    class TreeTest < Minitest::Test
       def setup
         response = File.read('test/fixtures/open_tree_of_life/studies/tree_response.json')
         conn = Faraday.new do |builder|

@@ -1,6 +1,6 @@
 # Taxa
 
-Taxa allows users to search multiple taxonomic data sources. Currently only Open Tree of Life is implemented.
+Taxa allows users to search multiple taxonomic data sources. Currently only Open Tree of Life and EOL classic APIs are implemented.
 
 ## Installation
 
@@ -19,8 +19,13 @@ Or install it yourself as:
     $ gem install taxa
 
 ## Usage
+```ruby
+tol_client = Taxa::OpenTreeOfLife::Client.new
+tol_client.tnrs.match_names('Cotyledon') # can be an array or a string
 
-client = Taxa::OpenTreeOfLife::Client.new
+eol_client = Taxa::EOLClassic::Client.new
+eol_client.hierarchy_entries(7834469)
+```
 
 ## Development
 

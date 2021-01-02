@@ -4,7 +4,6 @@ require_relative './tnrs/base'
 require_relative './tree_of_life/base'
 require_relative './taxonomy/base'
 require_relative './studies/base'
-require 'faraday'
 
 module Taxa
   module OpenTreeOfLife
