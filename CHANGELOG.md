@@ -11,3 +11,8 @@ https://github.com/OpenTreeOfLife/germinator/wiki/Open-Tree-of-Life-Web-APIs
 ### Highlights
 Support for the classic API for EOL
 https://eol.org/docs/what-is-eol/classic-apis
+
+## [0.2.1]
+
+### Highlights
+Update JSON gem to 2.5.x
