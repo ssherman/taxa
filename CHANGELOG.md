@@ -16,3 +16,9 @@ https://eol.org/docs/what-is-eol/classic-apis
 
 ### Highlights
 Update JSON gem to 2.5.x
+
+## [0.3.0]
+
+### Highlights
+Support for Plants of the World Online
+http://plantsoftheworldonline.org/

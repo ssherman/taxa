@@ -25,7 +25,15 @@ tol_client.tnrs.match_names('Cotyledon') # can be an array or a string
 
 eol_client = Taxa::EOLClassic::Client.new
 eol_client.hierarchy_entries(7834469)
+
+powo_client = Taxa::PlantsOfTheWorldOnline::Client.new
+powo_client.search('Crassula alata')
+powo_client.search('Crassula', ['species_f', 'has_images'])
+powo_client.search('family:Crassulaceae', ['species_f', 'has_images'])
 ```
+
+For Plants of the World Online please see their official python library for available search terms: 
+https://github.com/RBGKew/pykew#available-search-terms-1
 
 ## Development
 
