@@ -45,7 +45,7 @@ module Taxa
       def validate_search_parameters(query, page, filters)
         raise ArgumentError, 'query can not be nil' if query.nil?
 
-        if !filters.empty? && !filters.all? {|f| FILTERS.include? f}
+        if !filters.empty? && !filters.all? { |f| FILTERS.include? f }
           raise ArgumentError,
                 "filter is invalid. It must be one of these: #{FILTERS.join(', ')} can not be nil"
         end
