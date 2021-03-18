@@ -10,7 +10,7 @@ module Taxa
 
       POWO_URL = 'http://www.plantsoftheworldonline.org/api/2'
 
-      FILTERS = %w[accepted_names has_images families_f genus_f species__f infraspecific_f].freeze
+      FILTERS = %w[accepted_names has_images families_f genus_f species_f infraspecific_f].freeze
 
       def initialize(**options)
         @options = options
@@ -45,7 +45,7 @@ module Taxa
       def validate_search_parameters(query, page, filters)
         raise ArgumentError, 'query can not be nil' if query.nil?
 
-        if !filters.empty? && (filters & FILTERS).empty?
+        if !filters.empty? && !filters.all? {|f| FILTERS.include? f}
           raise ArgumentError,
                 "filter is invalid. It must be one of these: #{FILTERS.join(', ')} can not be nil"
         end

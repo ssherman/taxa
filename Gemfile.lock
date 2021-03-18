@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    taxa (0.2.1)
+    taxa (0.3.0)
       faraday (~> 1.1)
       json (~> 2.5)
 

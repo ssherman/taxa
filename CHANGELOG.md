@@ -22,3 +22,8 @@ Update JSON gem to 2.5.x
 ### Highlights
 Support for Plants of the World Online
 http://plantsoftheworldonline.org/
+
+## [0.3.1]
+
+### Highlights
+Fixed a bug related to Plants of The World Online filter validation
