@@ -8,7 +8,7 @@ module Taxa
       attr_accessor :options
       attr_reader :http_client
 
-      POWO_URL = 'http://powo.science.kew.org/api/2'
+      POWO_URL = 'https://powo.science.kew.org/api/2'
 
       FILTERS = %w[accepted_names has_images families_f genus_f species_f infraspecific_f].freeze
 
