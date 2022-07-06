@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../utils'
+
 module Taxa
   module PlantsOfTheWorldOnline
     # API client for Open Tree of Life
@@ -8,7 +9,7 @@ module Taxa
       attr_accessor :options
       attr_reader :http_client
 
-      POWO_URL = 'http://www.plantsoftheworldonline.org/api/2'
+      POWO_URL = 'https://powo.science.kew.org/api/2'
 
       FILTERS = %w[accepted_names has_images families_f genus_f species_f infraspecific_f].freeze
 
@@ -21,10 +22,12 @@ module Taxa
         options.transform_keys!(&:to_sym)
 
         page = options[:page] || 0
-        filters = Array.wrap(options[:filters])
-        validate_search_parameters(query, page, filters)
+        per_page = options[:per_page] || 500
 
-        payload = { q: query, p: page }
+        filters = Array.wrap(options[:filters])
+        validate_search_parameters(query, page, per_page, filters)
+
+        payload = { q: query, p: page, perPage: per_page }
         payload.merge!({ f: filters.join(',') }) unless filters.empty?
         response = @http_client.get("#{POWO_URL}/search", payload, { 'Accept' => 'application/json' })
         parse_response(response)
@@ -42,7 +45,7 @@ module Taxa
 
       private
 
-      def validate_search_parameters(query, page, filters)
+      def validate_search_parameters(query, page, per_page, filters)
         raise ArgumentError, 'query can not be nil' if query.nil?
 
         if !filters.empty? && !filters.all? { |f| FILTERS.include? f }
@@ -51,6 +54,9 @@ module Taxa
         end
 
         raise ArgumentError, 'page must be an integer' unless page.is_a?(Integer)
+
+        raise ArgumentError, 'per_page must be an integer' unless per_page.is_a?(Integer)
+
       end
 
       def parse_response(response)
