@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../utils'
+
 module Taxa
   module PlantsOfTheWorldOnline
     # API client for Open Tree of Life
@@ -21,8 +22,8 @@ module Taxa
         options.transform_keys!(&:to_sym)
 
         page = options[:page] || 0
-        per_page = options[:per_page] || 0
-        
+        per_page = options[:per_page] || 500
+
         filters = Array.wrap(options[:filters])
         validate_search_parameters(query, page, per_page, filters)
 
